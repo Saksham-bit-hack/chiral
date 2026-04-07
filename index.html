@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chiral Analyzer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white">
+
+<div class="min-h-screen flex flex-col items-center justify-center">
+
+  <h1 class="text-5xl font-bold mb-4">🧪 Chiral Analyzer</h1>
+  <p class="text-gray-400 mb-6">Analyze molecular chirality instantly</p>
+
+  <input id="search"
+    class="px-4 py-2 rounded-lg text-black w-80"
+    placeholder="Enter compound (e.g. Ritonavir)" />
+
+  <button onclick="analyze()"
+    class="mt-4 bg-blue-500 px-6 py-2 rounded-lg hover:bg-blue-700">
+    Analyze
+  </button>
+
+  <div id="result" class="mt-10 w-full max-w-2xl"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
